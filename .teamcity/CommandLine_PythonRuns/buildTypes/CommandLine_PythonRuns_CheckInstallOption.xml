@@ -7,12 +7,14 @@
     <build-runners>
       <runner id="RUNNER_19" name="pytest" type="python-runner">
         <parameters>
-          <param name="command" value="pytest" />
+          <param name="command" value="file" />
           <param name="coverageArgs" value="--omit=*lib*" />
           <param name="envTool" value="none" />
-          <param name="installToolPackage" value="true" />
+          <param name="installToolPackage" value="false" />
+          <param name="isCoverageEnabled" value="false" />
           <param name="isTestReportingEnabled" value="true" />
           <param name="pythonVersion" value="python3" />
+          <param name="scriptFile" value="ygy" />
           <param name="teamcity.step.mode" value="default" />
           <param name="virtualenvEnvName" value=".venv" />
           <param name="virtualenvFile" value="requirements.txt" />
