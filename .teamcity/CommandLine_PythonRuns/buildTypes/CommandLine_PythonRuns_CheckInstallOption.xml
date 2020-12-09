@@ -18,6 +18,20 @@
           <param name="virtualenvFile" value="requirements.txt" />
         </parameters>
       </runner>
+      <runner id="RUNNER_20" name="flake8" type="python-runner">
+        <parameters>
+          <param name="command" value="flake" />
+          <param name="coverageArgs" value="--omit=*lib*" />
+          <param name="envTool" value="none" />
+          <param name="installToolPackage" value="true" />
+          <param name="isCoverageEnabled" value="false" />
+          <param name="isTestReportingEnabled" value="true" />
+          <param name="pythonVersion" value="python3" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="virtualenvEnvName" value=".venv" />
+          <param name="virtualenvFile" value="requirements.txt" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="CommandLine_PythonRuns_Pytest" />
