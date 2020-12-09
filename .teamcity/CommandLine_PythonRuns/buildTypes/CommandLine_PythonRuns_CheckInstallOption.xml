@@ -5,7 +5,7 @@
   <settings>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_19" name="" type="python-runner">
+      <runner id="RUNNER_19" name="pytest" type="python-runner">
         <parameters>
           <param name="command" value="pytest" />
           <param name="coverageArgs" value="--omit=*lib*" />
